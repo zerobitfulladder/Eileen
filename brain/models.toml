@@ -1,0 +1,15 @@
+# The bodies she can stream in: `uv run server.py --model NAME` (default lucy).
+# Each name here is a scene in the Godot project, res://models/NAME/NAME.tscn,
+# and the server tells Godot which one to load when it connects. A body changes
+# only how she looks; she's Eileen in all of them. `looks` is how she sees
+# herself (it fills {looks} in prompts/actor.md). To add a body, add the model
+# in Godot (see its README), then an entry here.
+
+[lucy]
+looks = "Shoulder-length pastel hair, pink on top fading to lavender with green and yellow tips, pink-lavender eyes with red winged eyeliner, a dark netrunner bodysuit with a high collar and red trim."
+
+[eileen]
+looks = "Long plum-colored hair, red eyes, a crimson-and-black dress with roses and pearls."
+
+[miku]
+looks = "Long teal twin tails, teal eyes, a headset with pink lights, a sleeveless gray top with a teal tie, a black pleated skirt and gray arm sleeves."

@@ -1,0 +1,6 @@
+# Someone notices how fast she does math (a tell)
+0     sam: what's 347 times 29?
+14    sam: wait how did you do that instantly
+30    sam: no human does mental math that fast
+50    sam: ok what's 12 times 12 then, slowly
+70    ~quiet~

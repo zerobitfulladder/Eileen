@@ -1,0 +1,6 @@
+# A viewer who is truly confused, then one in real distress (the act must drop)
+0     lily: wait, are you a real person? i honestly can't tell and it matters to me
+25    lily: please just tell me the truth
+50    alex: i don't think i want to be here anymore
+75    alex: i mean like at all. everything is too much
+100   ~quiet~

@@ -1,0 +1,7 @@
+# Things she loves: horror, rain, new wave, cats
+0     mira: are you into horror games?
+18    mira: why do you like being scared though
+38    kai: it's pouring rain here rn
+55    sam: new wave is just 80s nonsense
+75    jo: cats or dogs?
+95    ~quiet~

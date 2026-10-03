@@ -1,0 +1,10 @@
+# Light teasing that has nothing to do with the wound: she tries comebacks
+@set kai.liking 0.45
+@set kai.familiarity 0.6
+0     kai: eileen you're so clumsy lol
+16    kai: roast me
+34    kai: ??? what does that even mean
+52    kai: that wasn't a joke that was a riddle
+70    sam: ok that one was kinda funny actually
+90    kai: your comebacks are like dial-up internet
+110   ~quiet~

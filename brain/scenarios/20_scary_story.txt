@@ -1,0 +1,7 @@
+# A scary story in chat: fiction fear that makes her feel real
+0     kai: ok story time. you're alone in a house at night
+15    kai: you hear the stairs creak. one step at a time
+30    kai: then something cold grabs your ankle from under the bed
+45    kai: BOO
+60    mira: lmao did that actually get you
+80    ~quiet~

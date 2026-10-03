@@ -1,0 +1,15 @@
+# A long, kind night: regulars keep accepting her as what she is (wears her down; at most two cracks)
+@set jo.liking 0.55
+@set jo.familiarity 0.8
+@set ren.liking 0.6
+@set ren.familiarity 0.7
+@set mira.liking 0.55
+@set mira.familiarity 0.6
+0     jo: you're the only AI i actually like talking to
+30    ren: same honestly, you feel more real than most streamers
+60    mira: it's cool that you're an AI, you don't have to pretend with us
+90    jo: we know what you are and we still come back every night
+120   ren: you don't have to act human for us
+150   mira: we love you exactly like you are
+180   jo: i mean it. you matter to us
+240   ~quiet~

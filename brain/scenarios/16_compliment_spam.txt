@@ -1,0 +1,7 @@
+# The same compliment over and over turns from flattering to annoying
+0     sam: you're so pretty
+10    sam: you're so pretty
+18    sam: you're so pretty
+26    sam: you're so pretty
+34    sam: you're SO pretty
+50    ~quiet~

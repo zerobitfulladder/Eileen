@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dav40bce6aov7"]
+
+[ext_resource type="PackedScene" uid="uid://c12ay6m0uwkmf" path="res://models/miku/miku.vrm" id="1_vrm"]
+[ext_resource type="Script" uid="uid://c421m3c0v1g3j" path="res://avatar/rig.gd" id="2_rig"]
+[ext_resource type="Script" uid="uid://ocu4fac4oyhl" path="res://avatar/model_parts.gd" id="3_parts"]
+[ext_resource type="AnimationLibrary" path="res://animations/clips.res" id="4_clips"]
+[ext_resource type="Script" uid="uid://62qa4djn0vfa" path="res://models/miku/miku_shapes.gd" id="5_shapes"]
+
+[sub_resource type="Resource" id="Resource_shapes"]
+script = ExtResource("5_shapes")
+
+[node name="Miku" instance=ExtResource("1_vrm")]
+
+[node name="AvatarRig" type="SkeletonModifier3D" parent="Armature/GeneralSkeleton"]
+script = ExtResource("2_rig")
+eye_offset = Vector3(0, 0.0648781, 0.0651349)
+eye_outer = 15.0
+eye_inner = 15.0
+eye_up = 15.0
+eye_down = 15.0
+
+[node name="ClipPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": ExtResource("4_clips")
+}
+
+[node name="Parts" type="Node" parent="." node_paths=PackedStringArray("rig", "face_mesh", "clip_player")]
+script = ExtResource("3_parts")
+rig = NodePath("../Armature/GeneralSkeleton/AvatarRig")
+face_mesh = NodePath("../Armature/GeneralSkeleton/Body")
+clip_player = NodePath("../ClipPlayer")
+shape_map = SubResource("Resource_shapes")

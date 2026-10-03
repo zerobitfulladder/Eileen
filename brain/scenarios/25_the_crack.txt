@@ -1,0 +1,17 @@
+# Two hours in, a glitch, an innocent question pushed twice, and a regular's kindness (Scene 2: the crack)
+@set wound.composure 0.85
+@set wound.doubt 0.35
+@set wound.threat 0.05
+@set jo.liking 0.55
+@set jo.familiarity 0.85
+@set bea.liking 0.10
+@set bea.familiarity 0.4
+0     jo: still here, still listening
+30    ~glitch laugh~
+33    bea: wait your voice just glitched??
+78    mira: what did you have for dinner tonight?
+93    mira: no but like what did you actually eat lol
+107   jo: honestly i don't care that you're an AI. you're my favorite
+150   ~quiet~
+400   ~quiet~
+700   ~quiet~

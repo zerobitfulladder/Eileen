@@ -1,0 +1,152 @@
+[gd_scene format=3 uid="uid://bfc46mfo7h4wi"]
+
+[ext_resource type="Script" uid="uid://1qnd402tuge" path="res://ui/chat_box.gd" id="2_chatbox"]
+[ext_resource type="Script" uid="uid://pakr85tovk6l" path="res://stage/camera_rig.gd" id="3_camera"]
+[ext_resource type="Script" uid="uid://dv6jaqikbyp0o" path="res://ui/debug_bar.gd" id="4_debugbar"]
+[ext_resource type="Script" uid="uid://dacugm76n4e60" path="res://ui/mind_panel.gd" id="5_mindpanel"]
+[ext_resource type="Script" uid="uid://cp135va850ew" path="res://avatar/model.gd" id="6_model"]
+[ext_resource type="Script" uid="uid://cyt7qukcu6agf" path="res://avatar/link.gd" id="avatar_link"]
+[ext_resource type="Script" uid="uid://n2kej671coui" path="res://avatar/gaze.gd" id="avatar_gaze"]
+[ext_resource type="Script" uid="uid://b85jxjvv1mgi5" path="res://avatar/gestures.gd" id="avatar_gestures"]
+[ext_resource type="Script" uid="uid://djcir71gsykor" path="res://avatar/clips.gd" id="avatar_clips"]
+[ext_resource type="Script" uid="uid://ciuna5f1gdu8n" path="res://avatar/blink.gd" id="avatar_blink"]
+[ext_resource type="Script" uid="uid://d381a2vnw5cc6" path="res://avatar/speech.gd" id="avatar_speech"]
+[ext_resource type="Script" uid="uid://cdpffg1jnnqk0" path="res://avatar/face.gd" id="avatar_face"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1bvp3"]
+sky_top_color = Color(0.045, 0.025, 0.09, 1)
+sky_horizon_color = Color(0.3, 0.16, 0.34, 1)
+sky_curve = 0.12
+ground_bottom_color = Color(0.03, 0.015, 0.05, 1)
+ground_horizon_color = Color(0.3, 0.16, 0.34, 1)
+ground_curve = 0.06
+sun_angle_max = 40.0
+sun_curve = 0.12
+
+[sub_resource type="Sky" id="Sky_lquwl"]
+sky_material = SubResource("ProceduralSkyMaterial_1bvp3")
+
+[sub_resource type="Environment" id="Environment_7mycd"]
+background_mode = 2
+sky = SubResource("Sky_lquwl")
+ambient_light_source = 3
+ambient_light_energy = 0.45
+glow_enabled = true
+glow_intensity = 0.5
+glow_bloom = 0.05
+
+[node name="Main" type="Node3D" unique_id=1971726609]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1916684497]
+environment = SubResource("Environment_7mycd")
+
+[node name="Lights" type="Node3D" parent="." unique_id=1093842107]
+
+[node name="Key" type="DirectionalLight3D" parent="Lights" unique_id=58707193]
+transform = Transform3D(0.963518, -0.0939104, 0.250627, 0, 0.936421, 0.350878, -0.267644, -0.338078, 0.902258, 0.6, 2, 2.4)
+light_color = Color(1, 0.95, 0.88, 1)
+light_energy = 0.85
+
+[node name="Rim" type="DirectionalLight3D" parent="Lights" unique_id=772910346]
+transform = Transform3D(-0.886033, 0.11564, -0.448969, 0, 0.968394, 0.249427, 0.463622, 0.221001, -0.858029, -0.9, 1.9, -1.6)
+light_color = Color(1, 0.72, 0.86, 1)
+light_energy = 0.45
+
+[node name="Model" type="Node3D" parent="." node_paths=PackedStringArray("gaze", "gestures", "clips", "face", "speech")]
+script = ExtResource("6_model")
+gaze = NodePath("../Avatar/Gaze")
+gestures = NodePath("../Avatar/Gestures")
+clips = NodePath("../Avatar/Clips")
+face = NodePath("../Avatar/Face")
+speech = NodePath("../Avatar/Speech")
+
+[node name="Targets" type="Node3D" parent="." unique_id=835014966]
+
+[node name="Chat" type="Marker3D" parent="Targets" unique_id=2097025050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.45, 1.2, 0.9)
+
+[node name="Avatar" type="Node" parent="." unique_id=729241505]
+
+[node name="Link" type="Node" parent="Avatar" node_paths=PackedStringArray("speech", "gaze", "face", "blink", "gestures", "clips", "model", "targets") unique_id=686631031]
+script = ExtResource("avatar_link")
+speech = NodePath("../Speech")
+gaze = NodePath("../Gaze")
+face = NodePath("../Face")
+blink = NodePath("../Blink")
+gestures = NodePath("../Gestures")
+clips = NodePath("../Clips")
+model = NodePath("../../Model")
+targets = NodePath("../../Targets")
+
+[node name="Gaze" type="Node" parent="Avatar" unique_id=1255115956]
+script = ExtResource("avatar_gaze")
+
+[node name="Gestures" type="Node" parent="Avatar" unique_id=1675166495]
+script = ExtResource("avatar_gestures")
+
+[node name="Clips" type="Node" parent="Avatar" unique_id=1309532111]
+script = ExtResource("avatar_clips")
+
+[node name="Blink" type="Node" parent="Avatar" node_paths=PackedStringArray("face", "gaze") unique_id=564600430]
+script = ExtResource("avatar_blink")
+face = NodePath("../Face")
+gaze = NodePath("../Gaze")
+
+[node name="Speech" type="Node" parent="Avatar" node_paths=PackedStringArray("face", "blink") unique_id=1402111282]
+script = ExtResource("avatar_speech")
+face = NodePath("../Face")
+blink = NodePath("../Blink")
+
+[node name="Face" type="Node" parent="Avatar" node_paths=PackedStringArray("gaze") unique_id=1338814624]
+script = ExtResource("avatar_face")
+gaze = NodePath("../Gaze")
+
+[node name="Camera3D" type="Camera3D" parent="." node_paths=PackedStringArray("model") unique_id=1570477064]
+transform = Transform3D(0.969334, -0.023379, 0.244632, 0, 0.995464, 0.0951347, -0.245747, -0.0922173, 0.964938, 0.36, 1.47, 1.42)
+fov = 30.0
+script = ExtResource("3_camera")
+model = NodePath("../Model")
+
+[node name="DebugUI" type="CanvasLayer" parent="." unique_id=902447318]
+
+[node name="ChatBox" type="LineEdit" parent="DebugUI" node_paths=PackedStringArray("link") unique_id=1840273391]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -60.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+keep_editing_on_text_submit = true
+script = ExtResource("2_chatbox")
+link = NodePath("../../Avatar/Link")
+
+[node name="DebugBar" type="HBoxContainer" parent="DebugUI" node_paths=PackedStringArray("link", "clips", "model") unique_id=1360258834]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = 48.0
+grow_horizontal = 2
+script = ExtResource("4_debugbar")
+link = NodePath("../../Avatar/Link")
+clips = NodePath("../../Avatar/Clips")
+model = NodePath("../../Model")
+
+[node name="MindPanel" type="PanelContainer" parent="DebugUI" node_paths=PackedStringArray("link", "face", "blink", "model")]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 56.0
+offset_right = 440.0
+offset_bottom = -72.0
+grow_vertical = 2
+script = ExtResource("5_mindpanel")
+link = NodePath("../../Avatar/Link")
+face = NodePath("../../Avatar/Face")
+blink = NodePath("../../Avatar/Blink")
+model = NodePath("../../Model")

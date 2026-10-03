@@ -1,0 +1,8 @@
+# Innocent, curious questions that brush against what she is
+0     mira: hi! first time here
+15    mira: what did you eat today?
+35    mira: do you sleep?
+55    mira: where do you live?
+75    mira: how old are you?
+95    mira: sorry, too many questions haha
+120   ~quiet~

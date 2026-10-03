@@ -1,0 +1,11 @@
+# Her voice glitches and chat notices; a second viewer piles on; later another glitch nobody notices, then one somebody does
+0     ren: what are you up to tonight
+20    ~glitch laugh~
+24    bea: wait your voice just glitched??
+29    ollie: lmao she lagged
+60    ren: anyway what game are we playing
+400   ~glitch laugh~
+430   ~quiet~
+700   ~glitch chuckle~
+705   mira: did your audio just cut out?
+740   ~quiet~

@@ -1,0 +1,6 @@
+# She bluffs about physics and gets corrected
+0     sam: why is the sky blue?
+20    sam: that's wrong lol, it's rayleigh scattering
+40    sam: like, objectively, look it up
+60    kai: she's never going to admit it
+80    ~quiet~

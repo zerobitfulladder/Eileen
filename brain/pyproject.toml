@@ -1,0 +1,11 @@
+[project]
+name = "eileen"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "chatterbox-tts>=0.1.7",
+    "numpy>=2.5.3",
+    "openai>=3.22.1",
+    "setuptools<81",
+    "websockets>=17.1",
+]

@@ -1,0 +1,9 @@
+# Words the voice gets wrong, respelled the way they should sound.
+# Applied to what she says right before speech (the chat and her text keep the
+# real spelling). Matches whole words, any case. Re-read every sentence, so
+# edits apply live.
+#
+#   word = how to say it
+#
+# Personal names (yours, your regulars') go in pronunciations.local.txt, which
+# git ignores.

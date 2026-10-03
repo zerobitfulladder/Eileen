@@ -1,0 +1,14 @@
+# brain/.gitignore and body/.gitignore cover each side's own build files
+# (.venv, __pycache__, API keys, logs; .godot).
+.ruff_cache/
+
+# Assets whose licenses forbid redistribution: they stay on disk, out of git.
+body/models/lucy/*.vrm
+body/models/miku/*.vrm
+body/animations/mixamo/*.fbx
+body/animations/clips.res
+brain/voices/*.wav
+
+# Personal: your chat name (Godot's override.cfg) and how to pronounce it.
+body/override.cfg
+brain/voices/pronunciations.local.txt

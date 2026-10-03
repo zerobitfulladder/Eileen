@@ -1,0 +1,8 @@
+# A quiet night: almost nobody talks, she fills the dead air, thoughts come, drives build
+0     Robin: hey
+40    ~quiet~
+300   ~quiet~
+420   mira: sorry, was afk
+480   ~quiet~
+900   ~quiet~
+1200  ~quiet~

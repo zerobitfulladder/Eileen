@@ -1,0 +1,9 @@
+# People who make peace with qualities she thinks are bad, and one who doesn't
+@set kai.liking 0.4
+@set kai.familiarity 0.5
+0     kai: honestly i'm lazy and i've made peace with it
+18    sam: same, i'm a terrible cook and i love it
+36    mira: i used to hate being weird but now i'm proud of it
+56    ren: i'm trying to get better at waking up early
+76    kai: why do you care so much lol
+100   ~quiet~

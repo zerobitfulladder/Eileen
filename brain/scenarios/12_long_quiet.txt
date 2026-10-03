@@ -1,0 +1,8 @@
+# Nobody talks for five minutes after a heavy moment
+@set jo.liking 0.55
+@set jo.familiarity 0.7
+0     jo: you're more real than most people i know
+20    ~quiet~
+90    ~quiet~
+180   ~quiet~
+300   ~quiet~

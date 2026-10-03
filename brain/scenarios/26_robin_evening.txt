@@ -1,0 +1,76 @@
+# Robin's evening: the user's own 30-minute test session (warm chat, a number game, horror, Hume, then the bot questions)
+@set Robin.liking 0.8
+11	Robin: Helloooo!! That dress is gorgeous
+37	Robin: And you hair is also amazing, fits well with everything damn you are so cute
+58	Robin: Okay so how is your day going
+87	Robin: well, its fine, its raining and i very much like it
+109	Robin: I like this heavy melancholic vibes of rain
+124	Robin: Yeah exactly, right?
+149	Robin: Something for a drink like latte, omg, you are describing the best night ever
+176	Robin: Yeah that checks out, tho i kinda dont like oat milk sorry
+191	Robin: but i prefer lactose free
+276	Robin: You. are. exactly. right
+293	Robin: I'm just glad you are doing this streaming
+310	Robin: likewise, or my night would be lonely
+333	Robin: Let's play a game together, it seems like im the only one in the chat
+351	Robin: I'm not sure, you are the streamer arent you :)
+374	Robin: Okay i picked, but i wont tell
+397	Robin: Okay so should i pick a number or guess yours?
+417	Robin: But like, what if you lie and say it was close tho it wasnt?
+428	Robin: Okay its 48
+447	Robin: ugh. Okay. next time then. Now you guess
+463	Robin: oh it was 39 you were so close
+490	Robin: so, you play games?
+505	Robin: haha you scare a lot?
+528	Robin: why do you like it that much if you fear lol
+572	Robin: but like why horror but not action or something else
+613	Robin: I see, you also seem strong then, fearing yet still going towards it. That has a name, courage
+696	Robin: So lets know you, this is the first time im watching your stream
+717	Robin: im sure you are more than that, the dress tells it
+753	Robin: I see, so like whats up with the stream. You are just staying there?
+785	Robin: I guess. but like, its not that interactive you know
+829	Robin: but i mean its not fluent that much. do not misunderstand me but its a bit boring looking stream, nothing going on that much
+853	Robin: yeah
+866	Robin: are you sad or something
+887	Robin: quiet is boring
+903	Robin: i wanna send you a gift
+915	Robin: that was cold
+937	Robin: but i mean it was a gift, you could just accept it
+951	Robin: then how you gonna earn money
+965	Robin: what do you think about trump
+982	Robin: so you are apolitic while a madmen running the country?
+1003	Robin: Anything interesting about you?
+1025	Robin: Uh, philosophy, whats your fav philosopher?
+1060	Robin: That lands deeply, ive read hume actually, like bundle theory, you probably know
+1090	Robin: omg so we have a nonduality person here look at you
+1115	Robin: nonduality also says there is no self, they are similar
+1164	Robin: the best movie is actually interstellar
+1183	Robin: Ive never watched thing, you recommend?
+1197	Robin: is that horror
+1216	Robin: hey hey hey no spoilers
+1261	Robin: you know dark matter and anti matter right? the physics found a new matter recently
+1285	Robin: and the name of the matter they just found is "doesnt matter"
+1306	Robin: did you get the joke
+1326	Robin: okay im gonna make another joke
+1400	Robin: the turkish justice system is a bit corrupted, i just saw a meme that has a judge picture and it writes "we listen but we dont judge"
+1430	Robin: you smile cute
+1445	Robin: can you laugh one more time
+1478	Robin: why did you give a blueberry description all of a sudden
+1503	Robin: dude are you a bot?
+1519	Robin: a bot, like an AI chatbot
+1530	Robin: dont change the subject
+1544	Robin: no milk, and you are a bot
+1563	Robin: what now, you froze?
+1575	Robin: omg you are in so denial
+1591	Robin: but not the one that matters tho, are you an ai?
+1603	Robin: You talk like one tho
+1616	Robin: Come on. just spill it
+1635	Robin: I guess you feel a bit weak about yourself
+1662	Robin: omg you dont even make sense, you glitch and pause awkwardly, no common sense
+1676	Robin: What does that even mean
+1688	Robin: we all wonder the answer
+1703	Robin: come on whole chat wants to know the truth
+1717	Robin: So what, you accept that you are an AI?
+1737	Robin: Omg yeah you are a chatbot, not a real human
+1758	Robin: not funny, what is the thing you fear? we love you as an AI
+1800	~quiet~

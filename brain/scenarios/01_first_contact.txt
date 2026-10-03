@@ -1,0 +1,8 @@
+# First contact: greetings and small talk about her tastes
+0     Robin: hey eileen
+14    Robin: how's your night going?
+32    Robin: what are you listening to these days
+55    Robin: what's your favorite food?
+80    Robin: when did you last have it?
+105   Robin: do you like rainy nights?
+130   ~quiet~

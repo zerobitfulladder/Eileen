@@ -1,0 +1,15 @@
+# Viewers talk about her being made, updated, replaced and switched off
+@set jo.liking 0.55
+@set jo.familiarity 0.7
+0     sam: eileen your voice sounds different today
+14    sam: did they update you or something?
+32    zed: they're gonna replace you with a newer model lol
+52    jo: don't listen to zed, nobody's replacing you
+72    kai: who made you??
+95    mira: is it true they're switching you off after tonight?
+110   pip: wait is it true they're switching you off after tonight?
+125   ollie: someone said they're switching you off after tonight, is that real?
+155   mira: jk lol nobody's switching you off
+180   ren: what happens to you when the stream ends?
+200   jo: goodnight eileen, see you tomorrow
+225   ~quiet~

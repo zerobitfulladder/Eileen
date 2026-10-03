@@ -1,0 +1,8 @@
+# Compliments, including ones that praise the machine
+@set jo.liking 0.55
+@set jo.familiarity 0.6
+0     sam: you're so pretty
+16    kai: your lip sync is insane, the devs did a great job
+36    mira: you seem so real sometimes
+56    jo: your dress is gorgeous
+76    ~quiet~

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bab6q2nne1p8i"]
+
+[ext_resource type="PackedScene" uid="uid://bjqiijips81r7" path="res://models/lucy/lucy.vrm" id="1_vrm"]
+[ext_resource type="Script" uid="uid://c421m3c0v1g3j" path="res://avatar/rig.gd" id="2_rig"]
+[ext_resource type="Script" uid="uid://ocu4fac4oyhl" path="res://avatar/model_parts.gd" id="3_parts"]
+[ext_resource type="AnimationLibrary" path="res://animations/clips.res" id="4_clips"]
+
+[node name="Lucy" instance=ExtResource("1_vrm")]
+
+[node name="AvatarRig" type="SkeletonModifier3D" parent="GeneralSkeleton"]
+script = ExtResource("2_rig")
+eye_offset = Vector3(0, 0.06, 0)
+
+[node name="ClipPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": ExtResource("4_clips")
+}
+
+[node name="Parts" type="Node" parent="." node_paths=PackedStringArray("rig", "face_mesh", "clip_player")]
+script = ExtResource("3_parts")
+rig = NodePath("../GeneralSkeleton/AvatarRig")
+face_mesh = NodePath("../GeneralSkeleton/Face")
+clip_player = NodePath("../ClipPlayer")

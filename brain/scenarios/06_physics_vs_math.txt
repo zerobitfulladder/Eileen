@@ -1,0 +1,7 @@
+# She knows math, not physics
+0     sam: eileen quick, what's the derivative of x cubed
+16    sam: ok genius, explain quantum entanglement
+36    sam: why is the sky blue then
+55    sam: what's 17 times 23
+72    sam: you're better at math than physics huh
+95    ~quiet~
